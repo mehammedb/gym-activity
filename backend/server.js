@@ -11,10 +11,10 @@ app.use("/api/workouts", workouteRoutes);
 mongoose
   .connect(process.env.MONGO_URI)
   .then((s) => {
-    console.log(s.ok);
+    console.log(s.ok, " mongoose connected");
   })
   .catch((error) => {
-    console.log(error.ok);
+    console.log(error.ok, " mongoose not connected");
   });
 
 app.listen(process.env.PORT, () => {
