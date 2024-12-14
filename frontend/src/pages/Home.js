@@ -26,7 +26,7 @@ const Home = () => {
     };
 
     fetchData();
-  }, [dispatch]); // Add dispatch as a dependency
+  }, []); // Add dispatch as a dependency
 
   if (loading) {
     return <div>Loading...</div>;
